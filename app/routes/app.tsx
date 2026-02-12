@@ -15,6 +15,14 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 export default function App() {
   const { apiKey } = useLoaderData<typeof loader>();
 
+  if (!apiKey) {
+    return (
+      <div>
+        Missing Shopify API Key. Please check your environment variables.
+      </div>
+    );
+  }
+
   return (
     <AppProvider embedded apiKey={apiKey}>
       <s-app-nav>
