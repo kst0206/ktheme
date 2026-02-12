@@ -2,12 +2,11 @@
 
 client_id = "0b7e9db7c98e22feaefa20f8edf5f640"
 name = "ktheme"
-application_url = "https://example.com"
+application_url = "https://ktheme-git-main-kunalsts-projects.vercel.app"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-include_config_on_deploy = true
 
 [webhooks]
 api_version = "2026-04"
@@ -29,4 +28,4 @@ api_version = "2026-04"
 scopes = "write_products,read_orders"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://ktheme-git-main-kunalsts-projects.vercel.app" ]
